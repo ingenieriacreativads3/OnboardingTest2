@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+  <!-- Basic Page Needs
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <meta charset="utf-8">
+  <title>Libros</title>
+  <meta name="description" content="">
+  <meta name="author" content="">
+
+  <!-- Mobile Specific Metas
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+  <!-- FONT
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+
+
+  <!-- CSS
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+  <link rel="stylesheet" href="stylesheets/normalize.css">
+  <link rel="stylesheet" href="stylesheets/skeleton.css">
+  <link rel="stylesheet" href="./stylesheets/style_my.css">
+  <link rel="stylesheet" href="./stylesheets/style.css">
+
+  <!-- Favicon
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <link rel="icon" type="image/png" href="images/favicon.png">
+
+</head>
+<body>
+
+<!-- Primary Page Layout
+–––––––––––––––––––––––––––––––––––––––––––––––––– -->
+
+<div>
+  <header class="box">
+    <img id="isologotipo" src="./images/logoEncabezado.png" alt="isologotipo">
+    <h2>
+      CorpusSoft
+    </h2>
+    <nav>
+      <ul id="nav-list">
+        <li>Login</li>
+        <li>Register</li>
+        <li>About As</li>
+      </ul>
+    </nav>
+  </header>
+
+  <div class="container">
+
+    <section class="box">
+      <div class="form">
+        <h2>Formulario Onboarding</h2>
+        <div>
+          <h3>Librería</h3>
+          <div class="inputs">
+            <div class="input">
+              <label for="name">Nombre</label>
+              <input id="name" type="text" name="name" placeholder="Nombre">
+            </div>
+            <div class="input">
+              <label for="author">Autor</label>
+              <input id="author" type="text" name="author" placeholder="Autor">
+            </div>
+            <div>
+              <label for="code">Código</label>
+              <input id="code" type="text" name="code" placeholder="Código">
+            </div>
+          </div>
+          <br>
+          <br>
+          <button onclick="register()">Registrar</button>
+        </div>
+      </div>
+      <div class="container">
+        <div class="myTable">
+          <h3>Libros Disponibles</h3>
+          <table>
+            <thead>
+              <tr>
+                <th>Nombre</th>
+                <th>Autor</th>
+                <th>Código</th>
+                <th>Prestar</th>
+                <th>Eliminar</th>
+              </tr>
+            </thead>
+            <tbody id="borrowedBooks"></tbody>
+          </table>
+        </div>
+        <div class="myTable">
+          <h3>Libros Prestados</h3>
+          <table>
+            <thead>
+              <tr>
+                <th>Nombre</th>
+                <th>Autor</th>
+                <th>Código</th>
+                <th>Prestar</th>
+                <th>Eliminar</th>
+              </tr>
+            </thead>
+            <tbody id="availableBooks"></tbody>
+          </table>
+        </div>
+      </div>
+    </section>
+  </div>
+</div>
+<br>
+<br>
+<br>
+
+<div>
+  <div class="container">
+    <section class="box">
+      <div class="form estoNoSeQueEs">
+        <h3>Modificar</h3>
+        <div class="inputs">
+          <div class="input">
+            <label for="select">Libro</label>
+            <div class="select">
+              <select id="select">
+                <option>Seleccionar</option>
+              </select>
+            </div>
+          </div>
+          <div class="input">
+            <label for="nameUpdate">Nombre</label>
+            <input id="nameUpdate" type="text" name="name" placeholder="Nombre">
+          </div>
+          <div class="input">
+            <label for="authorUpdate">Autor</label>
+            <input id="authorUpdate" type="text" name="author" placeholder="Autor">
+          </div>
+          <div>
+            <label for="codeUpdate">Código</label>
+            <input id="codeUpdate" type="text" name="code" placeholder="Código">
+          </div>
+        </div>
+        <br>
+        <br>
+        <button onclick="updateThis()">Modificar</button>
+      </div>
+    </section>
+  </div>
+</div>
+
+<footer>
+  <section class="footer box">
+    <h3>Watch JetBrains TV</h3>
+    <p>Watch demos and webinars on JetBrains products and technologies</p>
+  </section>
+  <section class="footer box">
+    <h3>Get Sponsorship</h3>
+    <p>Classroom and open source licenses, as well as user group and startup project support</p>
+  </section>
+  <section class="footer box">
+    <h3>Get Your Student Pack</h3>
+    <p>Free access to desktop products including IntelliJ IDEA Ultimate, ReSharper Ultimate and other IDEst</p>
+  </section>
+  <section class="footer box">
+    <h3>Try PyCharm Edu</h3>
+    <p>The free, easy, and professional tool to learn programming with Python</p>
+  </section>
+</footer>
+
+<script src="./js/scripts.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+
+<!-- End Document
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+</body>
+</html>
